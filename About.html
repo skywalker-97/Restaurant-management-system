@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Restaurent About Page</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="./img/profile.jpg" type="image/x-icon">
+    <!--bootstrap 5-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--libraries stylesheet-->
+    <link rel="stylesheet" href="lib/animate/animate.css"><!--for animation-->
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css"><!--for owl slider-->
+    <!--icon-->
+    <!--for fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--bootstrap icon cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700&display=swap">
+</head>
+<body>
+    <!--==========navigation bar ==========-->
+    <div class="container-xxl position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restaurant</h1>
+            </a>
+            <!-- button for responsive device -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 pe-4">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="Menu.html" class="nav-item nav-link">Menu</a>
+                    <a href="About.html" class="nav-item nav-link">About</a>
+                    <a href="ContactUs.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                    <!-- button -->
+                    <a href="BookATable.html" class="btn btn-primary py-2 px-4">Book A Table</a>
+            </div>
+        </nav>
+    </div>
+    <style>
+        :root{
+    --primary: #fea116;
+    --light: #f1f8ff;
+    --dark: #0f172b;
+}
+
+        /* ==================== navigation ======================== */
+.navbar-dark .navber-nav .nav-link{
+    position: relative;
+    margin-left: 25px;
+    padding: 35px 0;
+    font-size: 15px;
+    color: var(--light) !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    outline: none;
+    transition: 0.5s;
+}
+
+@media (min-width: 992px){
+    .navbar-dark{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: var(--dark) !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-collapse{ 
+        margin-top: 15px;
+        border-top: 1px solid rgba(256, 256, 256, 0.1);
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        padding: 10px 0;
+        margin-left: 0;
+    }
+}
+    </style>
+    <br><br>
+    <!--================ About section  ====================-->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-start">
+                            <img src="./img/about-1.jpg" alt="" data-wow-delay="0.1s" class="img-fluid rounded w-100 wow zoomIn">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img src="./img/about-2.jpg" alt="" data-wow-delay="0.3s" class="img-fluid rounded w-75 wow zoomIn" style="margin-top: 25%;">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img src="./img/about-3.jpg" alt="" data-wow-delay="0.5s" class="img-fluid rounded w-75 wow zoomIn" style="margin: 11% 0% 0% 25%;">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img src="./img/about-4.jpg" alt="" data-wow-delay="0.7s" class="img-fluid rounded w-100 wow zoomIn" style="margin-top: 11%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                    <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restaurant</h1>
+                    <p class="mb-4"> where excellence meets convenience in every bite. We believe that food should not only satisfy your hunger but also tantalize your taste buds with premium quality ingredients and culinary mastery.</p>
+                    <p class="mb-4"> Order now and let us bring the flavors of your favorite restaurants right to you.</p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                <div class="ps-4">
+                                    <p class="mb-0">Years of</p>
+                                    <h6 class="text-uppercase mb-0">Experiences</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                <div class="ps-4">
+                                    <p class="mb-0">Popular</p>
+                                    <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--more button-->
+                    <a href="" class="btn btn-primary py-3 px-5 mt-2">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================== Booking section ==========================-->
+    <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="row g-0"> 
+            <div class="col-md-6">
+                <div class="video">
+                    <button class="btn-play" type="button" data-bs-toggle="modal" data-src="" data-bs-target="#videoModal">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        <div class="col-md-6 bg-dark d-flex align-items-center">
+            <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
+                <h1 class="text-white mb-4">Book A Table Online</h1>
+                <!-- form -->
+                <form action="">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <label for="name">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating data" id="date3" data-target-input="nearest">
+                                <input type="datetime-local" class="form-control datetimepicker-input" id="datetimepicker" placeholder="Date $ Time" data-target="#date3" data-toggle="datetimepicker" required>
+                                <label for="datetimepicker">Date $ Time</label>
+                            </div>
+                        </div>
+                        <!--select box-->
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select name="" id="select1" class="form-select" required>
+                                    <option value="1">People 1</option>
+                                    <option value="2">People 2</option>
+                                    <option value="3">People 3</option>
+                                </select>
+                                <label for="select1">No Of People</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea style="height: 100px;" name="" id="message" cols="30" rows="10" class="form-control" placeholder="Special Request" required></textarea>
+                                <label for="message">Special Request</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <style>
+        /* ==================== Booking section =======================*/
+.video{
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    background: linear-gradient(rgba(15, 23, 43, 0.1), rgba(15, 23, 43, 0.1)), url(../img/video.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video .btn-play{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    padding: 18px 20px 18px 28px;
+}
+
+.video .btn-play::before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: var(--primary);
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video .btn-play::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: var(--primary);
+    transition: all 200ms;
+    border-radius: 50%;
+}
+
+.video .btn-play img{
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.video .btn-play span{
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid var(--dark);
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+}
+
+@keyframes pulse-border {
+    0%{
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+    </style>
+    <!--=================== Our Team Section ===================-->
+    <div class="container-xxl pt-5 pb-3">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
+                <h1 class="mb-5">Our Master Chefs</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4">
+                            <img src="./img/team-1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <h5 class="mb-0">Chef Alejandro Ramirez</h5>
+                        <small>Executive Chef</small>
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4">
+                            <img src="./img/team-2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <h5 class="mb-0">Chef Mei Lin</h5>
+                        <small>Head Chef</small>
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4">
+                            <img src="./img/team-3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <h5 class="mb-0">Chef Miguel Torres</h5>
+                        <small>Grill Master</small>
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4">
+                            <img src="./img/team-4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <h5 class="mb-0">Chef Aiko Tanaka</h5>
+                        <small>Sushi Chef</small>
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="" class="btn btn-square btn-primary mx-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /*================== team-item =====================*/
+.team-item{
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+    height: calc(100% - 38px);
+    transition: 0.5s;
+}
+
+.team-item img{
+    transition: 0.5s;
+}
+
+.team-item:hover img{
+    transform: scale(1.1);
+}
+
+.team-item:hover{
+    height: 100%;
+} 
+
+.team-item .btn{
+    border-radius: 38px 38px 0 0;
+}
+
+    </style>
+    <!--================ Testimonial Start ====================-->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                <h1 class="mb-5">Our Clients Say!!!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item bg-transparent border rounded p-4">
+                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                    <p>I appreciate the option to filter restaurants based on dietary preferences. The checkout process is smooth, and the food always arrives hot and fresh.</p>
+                    <div class="d-flex align-items-center">
+                        <img style="width: 50px; height: 50px;" src="./img/testimonial-1.jpg" alt="" class="img-fluid flex-shrink-0 rounded-circle">
+                        <div class="ps-3">
+                            <h5 class="mb-1">Emily Johnson</h5>
+                            <small>Teacher</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-transparent border rounded p-4">
+                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                    <p>The website layout is user-friendly and easy to navigate. I love the variety of restaurants available and the quick delivery service.</p>
+                    <div class="d-flex align-items-center">
+                        <img style="width: 50px; height: 50px;" src="./img/testimonial-2.jpg" alt="" class="img-fluid flex-shrink-0 rounded-circle">
+                        <div class="ps-3">
+                            <h5 class="mb-1">John Smith</h5>
+                            <small>Bussinessman</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-transparent border rounded p-4">
+                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                    <p> I'm delighted by the diverse range of vegan-friendly eateries. The website design is clean, and the search function makes it simple to find what I'm craving.</p>
+                    <div class="d-flex align-items-center">
+                        <img style="width: 50px; height: 50px;" src="./img/testimonial-3.jpg" alt="" class="img-fluid flex-shrink-0 rounded-circle">
+                        <div class="ps-3">
+                            <h5 class="mb-1">David Brown</h5>
+                            <small>Engineer</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-transparent border rounded p-4">
+                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                    <p>The visuals on the website are appealing, and the food images are mouthwatering. I've had a positive experience every time I've ordered, and the delivery staff are always polite and punctual.</p>
+                    <div class="d-flex align-items-center">
+                        <img style="width: 50px; height: 50px;" src="./img/testimonial-4.jpg" alt="" class="img-fluid flex-shrink-0 rounded-circle">
+                        <div class="ps-3">
+                            <h5 class="mb-1">Sarah Lee</h5>
+                            <small>Doctor</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<style>
+    /* ====================== testimonial-carousel =========================== */
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item *{
+    color: var(--light) !important;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+</style>
+<!--======================= Footer Section =====================-->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                <a href="" class="btn btn-link">About Us</a>
+                <a href="" class="btn btn-link">Contact Us</a>
+                <a href="" class="btn btn-link">Responsive</a>
+                <a href="" class="btn btn-link">Privacy Policy</a>
+                <a href="" class="btn btn-link">Terms $ Condition</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marked-alt me-3"></i>123 Street, Baddi, Himachal Pradesh</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 7988 0297 93</p>
+                <p class="mb-2"><i class="fa fa-envelop me-3"></i>info@example.com</p>
+                <!-- social button -->
+                <div class="d-flex pt-2">
+                    <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-youtube"></i></a>
+                    <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                <p>09AM - 09PM</p>
+                <h5 class="text-light fw-normal">Sunday</h5>
+                <p>10AM - 08PM</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                <p>Stay up-to-date with our latest offers, delicious updates, and exclusive deals by subscribing to our newsletter!</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                <input type="text" class="form-control border-primary w-100 py-3 ps-4 pe-5" placeholder="Your Email">
+                <button class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright -->
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="" class="border-bottom">Mystery Code</a> | All Right Reserved
+                </div>
+                <!-- footer menu -->
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ======================== Back to top ============================= -->
+<a href="" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+</div>
+<style>
+    /* ============================== Footer =========================== */
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid #ffffff;
+    border-radius: 35px;
+    transition: 0.3s;
+}
+
+.footer .btn.btn-social:hover{
+    color: var(--primary);
+}
+
+.footer .btn.btn-link{
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.footer .btn.btn-link::before{
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover{
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright{
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, 0.1);
+}
+
+.footer .copyright a{
+    color: var(--light);
+}
+
+.footer .footer-menu a{
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(256, 256, 256, 0.1);
+}
+
+.footer .footer-menu a:last-child{
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.back-to-top{
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+</style>
+<!--jaquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!--bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--wow-->
+<script src="./lib/wow/wow.min.js"></script>
+<!--easing-->
+<script src="./lib/easing/easing.min.js"></script>
+<!--waypoint-->
+<script src="./lib/waypoints/waypoints.min.js"></script>
+<!--counter-->
+<script src="./lib/counterup/counterup.min.js"></script>
+<!--owlcarousel-->
+<script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+<!--js file-->
+<script src="./js/main.js"></script>
+</body>
+</html>
